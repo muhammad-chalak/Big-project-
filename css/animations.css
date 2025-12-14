@@ -1,0 +1,195 @@
+/* CSS بۆ جووڵە و ئەنیمەیشنەکان */
+
+/* جووڵەی هێواش بۆ کارتەکان */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* جووڵەی لێدانی بچووک */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* سووڕانەوەی ئایکۆنەکان */
+.rotate {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ڕوناکبوونەوە */
+.glow {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color); }
+    to { box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--primary-color); }
+}
+
+/* هاتنەژوورەوە لە چەپ */
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* هاتنەژوورەوە لە ڕاست */
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* هاتنەژوورەوە لە سەرەوە */
+.slide-in-top {
+    animation: slideInTop 0.8s ease-out;
+}
+
+@keyframes slideInTop {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* هاتنەژوورەوە لە خوارەوە */
+.slide-in-bottom {
+    animation: slideInBottom 0.8s ease-out;
+}
+
+@keyframes slideInBottom {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* شەپۆل */
+.wave {
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* لەناوچوون و دەرکەوتن */
+.fade-in-out {
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* بچووکبوونەوە و گەورەبوون */
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* تێهەڵچوونی بازنەیی */
+.circular-motion {
+    animation: circularMotion 20s linear infinite;
+}
+
+@keyframes circularMotion {
+    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+/* تێهەڵکێشی ھێڵی */
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+/* دروستبوونی ستێک */
+.stagger-item {
+    opacity: 0;
+    animation: staggerFadeIn 0.5s ease-out forwards;
+}
+
+@keyframes staggerFadeIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* درێژبوونەوە */
+.stretch {
+    animation: stretch 2s ease-in-out infinite alternate;
+}
+
+@keyframes stretch {
+    from { transform: scaleX(1); }
+    to { transform: scaleX(1.1); }
+}
+
+/* ڕوناکی سووڕانەوە */
+.light-spin {
+    animation: lightSpin 4s linear infinite;
+}
+
+@keyframes lightSpin {
+    from { transform: rotate(0deg) scale(1); opacity: 0.7; }
+    to { transform: rotate(360deg) scale(1.1); opacity: 1; }
+}
+
+/* جیاکەرەوەی ڕەنگین */
+.color-change {
+    animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: var(--primary-color); }
+    50% { color: var(--secondary-color); }
+    100% { color: var(--accent-color); }
+}
+
+/* دیاردەی باران */
+.raindrop {
+    animation: raindrop 1.5s linear infinite;
+}
+
+@keyframes raindrop {
+    0% { transform: translateY(-100px) scaleY(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(100px) scaleY(1); opacity: 0; }
+}
+
+/* جیھانی سووڕانەوە */
+.spin-world {
+    animation: spinWorld 20s linear infinite;
+}
+
+@keyframes spinWorld {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

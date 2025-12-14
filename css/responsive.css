@@ -1,0 +1,176 @@
+/* CSS بۆ مۆبایل و تابلێت */
+
+/* تەختەکان (٩٦٠px خواروو) */
+@media (max-width: 960px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .newsletter-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .timeline::before {
+        right: 30px;
+    }
+    
+    .timeline-date {
+        right: 60px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-date {
+        left: auto;
+        right: 60px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-right: 80px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-right: 80px;
+        margin-left: 0;
+    }
+}
+
+/* تابلێتەکان (٧٦٨px خواروو) */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .logo-section, .search-section, .user-section {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search-section {
+        order: 3;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .scholars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* مۆبایلە بچووکەکان (٥٧٦px خواروو) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .top-bar-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .language-switcher {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .scholars-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+        right: 20px;
+    }
+    
+    .timeline-date {
+        right: 40px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-date {
+        right: 40px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-right: 60px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-right: 60px;
+    }
+    
+    .form-group {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* زۆر بچووک (٤٠٠px خواروو) */
+@media (max-width: 400px) {
+    .logo-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .featured-card, .feature-item, .scholar-card {
+        padding: 20px;
+    }
+    
+    .card-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
